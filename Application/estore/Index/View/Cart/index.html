@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="__PUBLIC__/Index/css/style.css" rel="stylesheet" type="text/css">
+<title>购物车列表显示</title>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div id="nav_user">
+	<span style="color:yellow">
+	<a href="javascript:void(0);">你好{$_SESSION['account']}！</a>
+		</span>
+	<a href="{:U('Index/User/register')}">注册</a>
+	<a href="{:U('Index/Cart/index')}">购物车</a>
+	<a href="{:U('Index/Order/index')}">结帐中心</a>
+	<a href="javascript:void(0);">用户管理</a>
+
+	<a href="{:U('Home/Login/index')}">后台管理</a>
+	<a href="{:U('Index/Index/logout')}">注销</a>
+</div>		</div>
+		<div id="nav">
+			<ul>
+				<li><span><a href="{:U('Index/Goods/index')}">首页</a></span></li>
+				<li><span><a href="javascript:void(0);">用户中心</a></span></li>
+				<li><span><a href="{:U('Home/Login/index')}">后台管理</a></span></li>
+			</ul>
+		</div>
+		<div id="wrapper">
+			<div id="contentCenter">
+				<div id="register">
+					<div id="cart">
+						<form method="post" action="cart.php">
+						<table width="530" border="1" cellpadding="0" cellspacing="3">
+							<tr>
+								<th scope="col">商品编号</th>
+								<th scope="col">商品名称</th>
+								<th scope="col">商品图片</th>
+								<th scope="col">商品单价</th>
+								<th scope="col">市场价格</th>
+								<th scope="col">商品数量</th>
+								<th scope="col">小计</th>
+								<th scope="col">操作</th>
+							</tr>
+						
+							<volist name="data" id="vo" key="k">
+									<tr>
+										<td>{$vo['id']}</td>
+										<td>【{$vo['goods_name']}】</td>
+										<td><img src="{$vo['goods_pic']}" width="50" height="50"></td>
+										<td>￥{$vo['store_price']}</td>
+										<td>￥{$vo['goods_price']}</td>
+										<td>{$vo['num']}件</td>
+										<td>￥{$vo['amount']}</td>
+										<td><a href="{:U('Index/Cart/deleteCart',array('id'=>$vo['goods_id']))}">删除</a></td>
+									</tr>
+							</volist>				
+						</table>
+						<table border="0">
+							<tr>
+								<td>总金额：￥{$total}元</td>
+								<!-- <td align="right">
+									<span>
+									<input type="button" value="清空" onclick="">
+									<input type="submit" value="更新">
+									<input type="hidden" name="act" value="update">
+									</span>
+								</td> -->
+							</tr>
+						</table>
+						</form>
+						<div>
+							<span class="continue"><a href="{:U('Index/Goods/index')}" >继续购买</a></span>
+							<span class="checkout"><a href="{:U('Index/Order/addOrder',array('total'=>$total))}" >结算中心</a></span>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+<label>『 Right By Christy Lan 』</label></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+[ 2016-10-22T15:54:45+08:00 ] ::1 /estore/Public/Home/plugin/My97DatePicker/WdatePicker.js
+ERR: 非法操作:Home
+
+[ 2016-10-22T15:56:44+08:00 ] ::1 /estore/Public/Home/plugin/My97DatePicker/WdatePicker.js
+ERR: 非法操作:Home
+
+[ 2016-10-22T15:56:49+08:00 ] ::1 /estore/Public/Home/plugin/My97DatePicker/WdatePicker.js
+ERR: 非法操作:Home
+
+[ 2016-10-22T16:40:40+08:00 ] ::1 /estore/index.php/Index/Goods/index.php
+ERR: 非法操作:index.php
+
+[ 2016-10-22T17:10:18+08:00 ] ::1 /estore/index.php/Index/Order/cart.php?act=show
+ERR: 非法操作:cart.php
+
+[ 2016-10-22T19:00:49+08:00 ] ::1 /estore/index.php/Index/Order/addOrder/total/106.html
+ERR: 1364:Field 'total' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `order` (`order_id`,`user_id`,`order_time`) VALUES ('1477134049','2','2016-10-22 19:00:49')
+
+[ 2016-10-22T19:58:22+08:00 ] ::1 /estore/index.php/Index/Order/cart.php?act=show
+ERR: 非法操作:cart.php
+
+[ 2016-10-22T20:31:34+08:00 ] ::1 /estore/index.php/estore/index.php/Index/Index/index.html.html
+ERR: 非法操作:index.php
+
+[ 2016-10-22T20:32:20+08:00 ] ::1 /estore/index.php/estore/index.php/Index/Index/index.html.html
+ERR: 非法操作:index.php
+
+[ 2016-10-22T20:33:12+08:00 ] ::1 /estore/index.php/estore/index.php/Index/Index/index.html.html
+ERR: 非法操作:index.php
+
+[ 2016-10-22T20:33:39+08:00 ] ::1 /estore/index.php/estore/index.php/Index/Index/index.html.html
+ERR: 非法操作:index.php
+
+[ 2016-10-22T20:33:40+08:00 ] ::1 /estore/index.php/estore/index.php/Index/Index/index.html.html
+ERR: 非法操作:index.php
+
+[ 2016-10-22T20:43:40+08:00 ] ::1 /estore/index.php/Index/Cart/index.php/Index/Index/index.php/Index/Index/index.php/Index/Index/index
+ERR: 非法操作:index.php
+
+[ 2016-10-22T20:48:13+08:00 ] ::1 /estore/Public/Home/plugin/My97DatePicker/WdatePicker.js
+ERR: 非法操作:Home
+
+[ 2016-10-22T20:57:53+08:00 ] ::1 /estore/Public/Home/plugin/My97DatePicker/WdatePicker.js
+ERR: 非法操作:Home
+

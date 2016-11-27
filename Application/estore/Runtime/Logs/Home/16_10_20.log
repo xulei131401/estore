@@ -1,0 +1,23 @@
+[ 2016-10-20T15:41:07+08:00 ] ::1 /estore/index.php/Home/Category/addChild/pid/1.html
+ERR: Think\Controller:_get方法不存在！
+
+[ 2016-10-20T15:42:09+08:00 ] ::1 /estore/index.php/Home/Category/addChild/pid/1.html
+ERR: Think\Controller:_get方法不存在！
+
+[ 2016-10-20T15:44:35+08:00 ] ::1 /estore/index.php/Home/Category/addChild/pid/1.html
+ERR: Think\Controller:_get方法不存在！
+
+[ 2016-10-20T15:46:31+08:00 ] ::1 /estore/index.php/Home/Category/addChild/pid/1.html
+ERR: 模板不存在:./Application/estore/Home/View/Category/addChild.html
+
+[ 2016-10-20T15:49:49+08:00 ] ::1 /estore/index.php/Home/Category/addCate.html
+ERR: 1364:Field 'category_name' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `category` (`pid`) VALUES ('5')
+
+[ 2016-10-20T15:59:33+08:00 ] ::1 /estore/index.php/Home/Category/edit/id/1.html
+ERR: Think\Controller:_get方法不存在！
+
+[ 2016-10-20T16:02:06+08:00 ] ::1 /estore/index.php/Home/Category/editCate.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE `id` = 4' at line 1
+ [ SQL语句 ] : UPDATE `category` SET  WHERE `id` = 4
+

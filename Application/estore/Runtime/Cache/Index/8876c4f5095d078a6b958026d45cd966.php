@@ -1,0 +1,123 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="/estore/Public/Index/css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/estore/Public/Index/js/functions.js"></script>
+
+<title>商品详细信息</title>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div id="nav_user">
+	<span style="color:yellow">
+	<a href="javascript:void(0);">你好<?php echo ($_SESSION['account']); ?>！</a>
+		</span>
+	<a href="<?php echo U('Index/User/register');?>">注册</a>
+	<a href="<?php echo U('Index/Cart/index');?>">购物车</a>
+	<a href="<?php echo U('Index/Order/index');?>">结帐中心</a>
+	<a href="javascript:void(0);">用户管理</a>
+
+	<a href="<?php echo U('Home/Login/index');?>">后台管理</a>
+	<a href="<?php echo U('Index/Index/logout');?>">注销</a>
+</div>		</div>
+		<div id="nav">
+			<ul>
+				<li><span><a href="<?php echo U('Index/Goods/index');?>">首页</a></span></li>
+				<li><span><a href="javascript:void(0);">用户中心</a></span></li>
+				<li><span><a href="<?php echo U('Home/Login/index');?>">后台管理</a></span></li>
+			</ul>
+		</div>
+		<div id="wrapper">
+			<div id="sidebar">
+				<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div style="margin-top:10px;"></div>
+
+<div class="category">
+	<div class="box_title">商品分类</div>
+	<div class="box_list">
+		<dl>
+					<dt>
+				<a href="javascript:void(0);">『衣服』</a>
+			</dt>
+							<dd>
+					|__ <a href="javascript:void(0);">上衣</a>
+				</dd>
+							<dd>
+					|__ <a href="javascript:void(0);">裤子</a>
+				</dd>
+							<dd>
+					|__ <a href="javascript:void(0);">衬衫</a>
+				</dd>
+							<dd>
+					|__ <a href="javascript:void(0);">棉袄</a>
+				</dd>
+								<dt>
+				<a href="javascript:void(0);">『帽子』</a>
+			</dt>
+								<dt>
+				<a href="javascript:void(0);">『箱包』</a>
+			</dt>
+							<dd>
+					|__ <a href="javascript:void(0);">女土包包</a>
+				</dd>
+							<dd>
+					|__ <a href="javascript:void(0);">旅行包</a>
+				</dd>
+								<dt>
+				<a href="javascript:void(0);">『鞋子』</a>
+			</dt>
+							</dl>
+	</div>
+	<div class="box_bottom"><img src="images//0.gif" width="10" height="1" alt=""/></div>
+</div>			</div>
+			<div id="content">
+				<div id="goodinfo">
+					<div class="gdImg">
+						<a href="#"><img src="<?php echo ($goodsdetail["goods_pic"]); ?>" width="250" height="250"></a>
+						<span class="buy">
+							<a href="<?php echo U('Index/Cart/addCart',array('id'=>$goodsdetail['id']));?>">购买</a>
+						</span>
+						<span class="fav">
+							<a href="#">收藏</a>
+						</span>
+						<div class="clear"></div>
+					</div>
+					<div class="gdInfo">
+						<h4><?php echo ($goodsdetail["goods_name"]); ?></h4>
+						<p>本店价格：<label style="color:red">￥<?php echo ($goodsdetail["store_price"]); ?></label></p>
+						<p>市场价格：<label style="color:red">￥<?php echo ($goodsdetail["goods_price"]); ?></label></p>
+						<p>商品数量：<?php echo ($goodsdetail["count"]); ?></p>
+						<p>上架时间：<?php echo ($goodsdetail["regtime"]); ?></p>
+						<p>商品点击数：<?php echo ($goodsdetail["hits"]); ?></p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div id="goodtab1">
+					<ul>
+						<li class="tab1">商品介绍</li>
+						<li class="tab2" onclick="changeTab('goodtab1','goodtab2',2)">留言信息</li>
+					</ul>
+					<div class="tabcontent">
+						<p><?php echo ($goodsdetail["description"]); ?></p>
+					</div>
+				</div>
+				<div id="goodtab2">
+					<ul>
+						<li class="tab2" onclick="changeTab('goodtab1','goodtab2',1)">商品介绍</li>
+						<li class="tab1">留言信息</li>
+					</ul>
+					<div class="tabcontent">
+					<!-- 留言 -->
+					</div>
+				</div>
+			</div>
+		</form>
+		</div>
+		<div id="footer"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<label>『 Right By Christy Lan 』</label></div>
+	</div>
+</body>
+</html>

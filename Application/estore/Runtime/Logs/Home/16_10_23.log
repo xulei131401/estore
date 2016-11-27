@@ -1,0 +1,14 @@
+[ 2016-10-23T14:53:15+08:00 ] ::1 /estore/index.php/Home/Index/article-class.html
+ERR: 非法操作:article-class
+
+[ 2016-10-23T15:12:17+08:00 ] ::1 /estore/index.php/Home/Address/index.html
+ERR: 无法加载控制器:Address
+
+[ 2016-10-23T15:42:38+08:00 ] ::1 /estore/index.php/Home/Address/addressAddHandle.html
+ERR: 1364:Field 'address' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `user_address` (`user_name`,`user_id`) VALUES ('zhaoliu','1')
+
+[ 2016-10-23T15:43:44+08:00 ] ::1 /estore/index.php/Home/Address/addressAddHandle.html
+ERR: 1364:Field 'address' doesn't have a default value
+ [ SQL语句 ] : INSERT INTO `user_address` (`user_name`,`user_id`) VALUES ('zhaoliu','1')
+
